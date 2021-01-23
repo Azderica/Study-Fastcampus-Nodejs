@@ -197,3 +197,5 @@ https://kangax.github.io/compat-table/es6/
 지원을 못하는 것은 babel로 바꿔준다.
 
 [Babel LINK](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.12.12&externalPlugins=))
+
+다양한 function 들이 있는데 이에 대한 내용은 직접 찾아보는 것이 더 좋을 듯합니다.
