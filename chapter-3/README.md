@@ -89,6 +89,19 @@ app.listen(port, () => {
 
 ## 템플릿 상속
 
+`package-json`은 npm을 사용하여 package.json 파일을 또는 node_modules 트리를 수정하면 자동으로 생성되는 파일입니다.
+
+즉,파일이 생성되는 시점의 의존성 트리에 대한 정보를 가지고 있습니다.
+
+package-lock.json 파일은 package.json 파일의 의존성 선언에는 version range가 사용되는데, 이는 특정 버전이 아니라 버전의 범위를 의미하며 이를 통해서 충돌을 줄이고 안정성을 위해 존재합니다.
+
+```
+package-lock.json
+
+express - bodyparser 1.2
+nunjucks - bodyparser 2.0
+```
+
 <br/>
 
 ## 미들웨어
@@ -97,9 +110,21 @@ app.listen(port, () => {
 
 환경을 연결해주는 소프트웨어를 의미합니다.
 
+중간요청을 가로채는 것으로 이해하면 됩니다. 로그인에서 사용할 수 있습니다.
+
 <br/>
 
 ## form (body-parser)
+
+```
+REST API
+GET /users => 사용자 정보
+POST /users => 사용자 추가
+GET /users/(ID) => 한명만 볼때
+PUT /users/(ID) => 한명 수정하기
+DELETE /users/(ID) => 해당 유저 삭제
+
+```
 
 <br/>
 
