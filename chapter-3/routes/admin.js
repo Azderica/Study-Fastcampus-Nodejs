@@ -1,39 +1,28 @@
 const express = require('express')
 const router = express.Router()
-const nunjucks = require('nunjucks')
 
-function testMiddleware(req, res, next) {
-  console.log('First Middleware')
+function testMiddleWare(req, res, next) {
+  console.log('첫번째 미들웨어')
   next()
 }
 
-function testMiddleware2(req, res, next) {
-  console.log('Second Middleware')
+function testMiddleWare2(req, res, next) {
+  console.log('두번째 미들웨어')
   next()
 }
 
-function loginRequired(req, res, next) {
-  if (로그인이되어있지않으면) {
-    res.redirect()
-  } else {
-    next()
-  }
-}
-
-// '/' 이후 testMiddleware 이후 내가 정의한 함수로 가는 순서
-router.get('/', testMiddleware, testMiddleware2, (req, res) => {
-  res.send('admin')
+router.get('/', testMiddleWare, testMiddleWare2, (req, res) => {
+  res.send('admin app')
 })
 
-router.get('/products', (req, res) => {
-  // res.send('admin products')
-  res.render('admin/products.html', {
-    message: '<h1>hello!!!!!!</h1>',
-    online: 'express',
-  })
+router.get('/products', (_, res) => {
+  res.render(
+    'admin/products.html',
+    { message: 'hello' } // message 란 변수를 템플릿으로 내보낸다.
+  )
 })
 
-router.get('/products/write', (req, res) => {
+router.get('/products/write', (_, res) => {
   res.render('admin/write.html')
 })
 

@@ -4,7 +4,7 @@
   "description": "practice express",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon -e js, html app.js",
+    "start": "npx nodemon -e js,html server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Azderica",

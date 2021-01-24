@@ -146,4 +146,12 @@ DELETE /users/(ID) => 해당 유저 삭제
 
 ## Express 권장 구조
 
+해당 코드 정리
+
+```
+controllers/index 대분류url + 폴더 위치
+controllers/admin/index (admin url + 미들웨어)
+controllers/admin/admin.ctrl.js ( 컨트롤러 역할)
+```
+
 <br/>
