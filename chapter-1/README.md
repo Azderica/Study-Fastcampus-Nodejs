@@ -2,7 +2,7 @@
 
 소스코드의 원본은 아래의 링크에 있습니다.
 
-[fc-javascript](https://github.com/parkjunyoung/fc-javascript))
+[fc-javascript](https://github.com/parkjunyoung/fc-javascript)
 
 ## JavaScript란
 
@@ -32,7 +32,7 @@ prototype의 기능에 추가를 하면 기능을 넣어줄 수 있습니다. JS
 예제 1.
 
 ```js
-function Car (a, b) {
+function Car(a, b) {
   this.name = a
   this.color = b
 }
@@ -68,7 +68,7 @@ var a = {
   b: 'hello',
   c: function () {
     console.log('gggg')
-  }
+  },
 }
 console.log(a.b) // outptut : 'hello'
 console.log(typeof a) // output : Object
@@ -83,7 +83,7 @@ console.log(typeof a) // output : Object
 넘길 때 함수로 넘길 수 있습니다.
 
 ```js
-function test (num, callback) {
+function test(num, callback) {
   console.log(num)
   callback()
 }
@@ -97,7 +97,7 @@ test(1, function () {
 함수 내에서 메모리처럼 사용하는 것
 
 ```js
-function ex_cl () {
+function ex_cl() {
   var num = 0
   return function () {
     num++
@@ -160,12 +160,12 @@ $(document).ready(function () {
 jQuery 코드 안에 아래와 같이 구성이 되어있다. 그래서 위에 예제처럼 돌아가게 구성되어 있다.
 
 ```js
-function $ (selector) {
+function $(selector) {
   var click = function (callback) {
     callback()
   }
   return {
-    click: click
+    click: click,
   }
 }
 
