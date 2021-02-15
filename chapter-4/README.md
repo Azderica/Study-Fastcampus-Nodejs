@@ -101,3 +101,5 @@ Products.prototype.dateFormat = (date) => moment(date).format('YYYY-MM-DD')
 ## DB 수정
 
 `write.html`에서 action을 비워놓음으로서 수정이나 신규 작성 시, action을 자동으로 처리해줍니다. 똑같이 post를 사용하지만 다른 결과를 만들 수 있습니다.
+
+## DB 삭제.
