@@ -98,8 +98,37 @@ Products.prototype.dateFormat = (date) => moment(date).format('YYYY-MM-DD')
 
 다음과 같이 진행하면 사용자가 보기 쉽게 수정합니다. `yyyy-mm-dd`의 형태로 출력합니다.
 
+<br/>
+
 ## DB 수정
 
 `write.html`에서 action을 비워놓음으로서 수정이나 신규 작성 시, action을 자동으로 처리해줍니다. 똑같이 post를 사용하지만 다른 결과를 만들 수 있습니다.
 
+<br/>
+
 ## DB 삭제.
+
+---
+
+## 정리
+
+CRUD 구현 ( select, insert, update, delete)
+
+- `models.테이블명.create(데이터)`
+- `models.테이블명.findAll(조회조건)`
+- `models.테이블명.findByPk(primary key)`
+- `models.테이블명.findOne(조회조건)`
+- `models.테이블명.update(데이터, 조회조건)`
+- `models.테이블명.deatroy(조회조건)`
+
+다음과 같이 crud를 쉽게 구현할 수 있습니다.
+
+해당 프로젝트의 구성은 mvc의 구조입니다.
+
+/admin
+
+/contacts
+
+- Contact.js
+
+와 같이 정리하는 것도 좋을 듯합니다.
