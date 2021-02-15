@@ -57,3 +57,31 @@ npm install sequelize@4.42.0
 <br/>
 
 ## 모델 작성
+
+<br/>
+
+## DB 입력
+
+```js
+exports.post_products_write = (req, res) => {
+  models.Products.create({
+    name: req.body.name,
+    price: req.body.price,
+    description: req.body.description,
+  }).then(() => {
+    res.redirect('/admin/products')
+  })
+
+  // models.Products.create(req.body).then(() => {
+  //   res.redirect('/admin/products')
+  // })
+}
+```
+
+삭선 처리한 것처럼 모델 생성할 수 있습니다. (자동으로 json 형식으로 만들어 주기 때문에.)
+
+js는 non-blocking이기 때문에 순서를 보장할려면 이를 개선해야하는 로직을 추가해야합니다. 데이터를 넣고 조회하는 순서의 로직이 필요하므로... 이를 해결하는 코드가 필요합니다.
+
+<br/>
+
+## DB 조회
