@@ -85,3 +85,15 @@ js는 non-blocking이기 때문에 순서를 보장할려면 이를 개선해야
 <br/>
 
 ## DB 조회
+
+## 상세페이지 작성 + Moment.js
+
+Moment.js로 사용자 입장에서 편하게 볼 수 있도록 수정합니다.
+
+```js
+const moment = require('moment')
+
+Products.prototype.dateFormat = (date) => moment(date).format('YYYY-MM-DD')
+```
+
+다음과 같이 진행하면 사용자가 보기 쉽게 수정합니다. `yyyy-mm-dd`의 형태로 출력합니다.
