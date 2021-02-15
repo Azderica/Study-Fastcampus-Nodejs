@@ -31,8 +31,10 @@ fs.readdirSync(__dirname)
   .forEach((file) => {
     var model = sequelize.import(path.join(__dirname, file))
     db[model.name] = model
+    // 해당 디렉토리에 있는 js 파일을 모델로 바꿔줌.
   })
 
+// 외부키 생성 로직
 Object.keys(db).forEach((modelName) => {
   if ('associate' in db[modelName]) {
     db[modelName].associate(db)

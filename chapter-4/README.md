@@ -38,6 +38,8 @@ mysql -u root -p
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '루트 비밀번호';
 ```
 
+<br/>
+
 ## DB 접속
 
 - sequelize 설치
@@ -51,3 +53,7 @@ npm install mysql2
 ```shell
 npm install sequelize@4.42.0
 ```
+
+<br/>
+
+## 모델 작성
