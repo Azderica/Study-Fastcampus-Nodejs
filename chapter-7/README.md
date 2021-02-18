@@ -17,7 +17,9 @@ Facebook에서 만든 API로 쿼리를 호출할 수 있습니다.
 
 쿼리로 호출.
 
-하나의 endpoint (/graphql)
+하나의 endpoint (/graphql)]
+
+로컬 graphql : http://localhost:4000/graphql
 
 ### 타입
 
